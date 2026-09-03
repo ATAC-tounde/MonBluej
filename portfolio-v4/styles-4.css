@@ -1,0 +1,37 @@
+.territory-ai{left:2265px;top:675px;color:#d68a24}
+.atelier-card{position:absolute;width:135px;height:95px;display:grid;place-items:center;background:#fff1b9;border:1px solid rgba(190,128,33,.12);box-shadow:6px 7px 0 rgba(214,138,36,.08);font:800 13px "DM Sans",sans-serif;letter-spacing:.10em;color:#9e681f}.ac1{left:55px;top:75px;transform:rotate(-8deg)}.ac2{left:210px;top:125px;background:#ffe1d1;color:#a65d49;transform:rotate(5deg)}.ac3{left:375px;top:80px;background:#def0de;color:#53805c;transform:rotate(-4deg)}
+.prototype-loop{position:absolute;left:150px;top:260px;width:280px;height:130px;border:3px dashed rgba(214,138,36,.18);border-radius:50%;transform:rotate(-5deg)}.prototype-loop i{position:absolute;width:16px;height:16px;border-radius:50%;background:#e6a33a;border:4px solid #fffaf0}.prototype-loop i:nth-child(1){left:10px;top:55px}.prototype-loop i:nth-child(2){left:120px;top:-8px}.prototype-loop i:nth-child(3){right:6px;top:55px}.prototype-loop i:nth-child(4){left:125px;bottom:-9px}
+.maker-line{position:absolute;width:160px;height:50px;border-top:3px solid rgba(214,138,36,.15);border-radius:50%}.ml1{left:40px;top:425px;transform:rotate(14deg)}.ml2{left:380px;top:425px;transform:rotate(-16deg)}
+.territory-ai .scene-note{left:350px;top:390px}
+
+/* Humain — chaleur, gestes, mots */
+.territory-human{left:1025px;top:1660px;color:#d96b5f}
+.human-sun{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff2c9,#efad69 58%,rgba(225,112,93,.34) 74%,transparent 76%)}.hs1{width:150px;height:150px;left:55px;top:85px}.hs2{width:100px;height:100px;left:250px;top:180px;opacity:.72}.hs3{width:82px;height:82px;left:420px;top:90px;opacity:.55}
+.hand-line{position:absolute;width:250px;height:110px;border:4px solid transparent;border-top-color:rgba(183,80,70,.17);border-radius:50%}.hl1{left:110px;top:315px;transform:rotate(12deg)}.hl2{left:300px;top:295px;transform:rotate(-16deg)}
+.human-words{position:absolute;left:290px;top:215px;display:flex;gap:8px;flex-wrap:wrap;width:240px}.human-words span{padding:7px 10px;border-radius:999px;background:rgba(255,250,240,.72);border:1px solid rgba(199,89,78,.13);font:600 10px "DM Sans",sans-serif;color:#93615b;transform:rotate(-2deg)}.human-words span:nth-child(even){transform:rotate(3deg)}
+.territory-human .scene-note{left:330px;top:390px}
+
+/* Caption éditorial qui accompagne la caméra */
+.territory-caption{position:absolute;left:86px;bottom:66px;z-index:22;width:min(360px,calc(100vw - 180px));padding:12px 16px 13px;border-left:4px solid #d9872f;background:rgba(255,250,240,.70);backdrop-filter:blur(8px);box-shadow:0 8px 24px rgba(78,60,40,.05);opacity:.25;transform:translateY(6px);transition:opacity .42s ease,transform .42s ease,border-color .5s ease}
+.territory-caption.visible{opacity:1;transform:none}
+.territory-caption small{display:block;font-size:8px;letter-spacing:.16em;color:#9b8469;font-weight:800;text-transform:uppercase}
+.territory-caption strong{display:block;margin-top:2px;font:700 22px/1.05 "Fraunces",Georgia,serif;color:#26364c;letter-spacing:-.02em}
+.territory-caption span{display:block;margin-top:5px;font-size:10px;line-height:1.38;color:#766f65}
+body[data-territory="science"] .territory-caption{border-color:#4f9d69}body[data-territory="clinical"] .territory-caption{border-color:#3e8ed0}body[data-territory="dev"] .territory-caption{border-color:#8c63a8}body[data-territory="validation"] .territory-caption{border-color:#2f6fbb}body[data-territory="ai"] .territory-caption{border-color:#e6a33a}body[data-territory="human"] .territory-caption{border-color:#d96b5f}
+
+/* Les cartes changent aussi de matière selon le territoire actif */
+body[data-territory="science"] .node[data-branch="science"]{border-radius:34px 17px 31px 19px;background:linear-gradient(150deg,#fffdf6,#f1f8ea)}
+body[data-territory="clinical"] .node[data-branch="clinical"]{border-radius:12px;background:repeating-linear-gradient(180deg,#fffdf8 0 30px,#e8f1f3 31px,#fffdf8 32px)}
+body[data-territory="validation"] .node[data-branch="validation"]{border-radius:8px 18px 8px 18px;border-left-width:4px;background:#fffdf8}
+body[data-territory="dev"] .node[data-branch="dev"]{border-radius:4px;background:linear-gradient(90deg,rgba(140,99,168,.045) 1px,transparent 1px),linear-gradient(rgba(140,99,168,.045) 1px,transparent 1px),#fffdf8;background-size:13px 13px}
+body[data-territory="ai"] .node[data-branch="ai"]{border-radius:4px;box-shadow:10px 11px 0 color-mix(in srgb,var(--node-color) 11%,#f4ead9),0 12px 25px rgba(86,67,43,.10)}
+body[data-territory="human"] .node[data-branch="human"]{border-radius:26px 12px 29px 17px;background:linear-gradient(145deg,#fff8f0,#fffdf8)}
+
+/* Le mot de chaque territoire devient une grande enseigne quand il est visité */
+body[data-territory="science"] .w-science,body[data-territory="clinical"] .w-clinical,body[data-territory="validation"] .w-validation,body[data-territory="dev"] .w-dev,body[data-territory="ai"] .w-ai,body[data-territory="human"] .w-human{opacity:.13;transform:rotate(-2deg) scale(1.03);transition:opacity .7s,transform .7s}
+
+@media (max-width:780px){
+  .territory-caption{left:14px;right:14px;bottom:54px;width:auto;padding:9px 12px}.territory-caption strong{font-size:18px}.territory-caption span{font-size:9px}.stage-help{display:none}
+  .territory-scene{opacity:0!important}
+}
+@media (prefers-reduced-motion:reduce){.territory-scene,.territory-caption,.stage{transition:none!important}}
