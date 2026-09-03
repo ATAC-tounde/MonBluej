@@ -1,0 +1,45 @@
+body[data-territory="future"] .stage{background:
+  radial-gradient(circle at 50% 50%,rgba(198,162,75,.18),transparent 30%),
+  linear-gradient(145deg,#f5f0df,#fffbef 50%,#eef0de)}
+
+.territory-scene{position:absolute;width:650px;height:520px;opacity:0;transform:scale(.93) rotate(-1deg);transition:opacity .7s ease,transform .8s cubic-bezier(.2,.8,.2,1);pointer-events:none;filter:saturate(.92)}
+.territory-scene.active{opacity:.92;transform:scale(1) rotate(0deg)}
+.territory-scene .scene-note{position:absolute;max-width:245px;padding:10px 14px 11px;border-left:3px solid currentColor;font-family:"Fraunces",Georgia,serif;color:#53635b;line-height:1.05;transform:rotate(-2deg)}
+.territory-scene .scene-note b{display:block;font-size:24px;letter-spacing:-.03em}
+.territory-scene .scene-note span{display:block;margin-top:4px;font-family:"DM Sans",sans-serif;font-size:10px;line-height:1.35;color:#756f64}
+
+/* Sciences — formes cellulaires, feuilles, filaments */
+.territory-science{left:430px;top:1130px;color:#4f9d69}
+.territory-science .cell{position:absolute;border:2px solid rgba(67,134,85,.22);border-radius:46% 54% 58% 42% / 55% 43% 57% 45%;background:radial-gradient(circle at 35% 34%,rgba(255,255,255,.78),rgba(117,178,125,.10));box-shadow:inset 0 0 0 10px rgba(93,152,101,.025)}
+.territory-science .c1{width:190px;height:155px;left:25px;top:165px;transform:rotate(14deg)}
+.territory-science .c2{width:118px;height:138px;left:215px;top:80px;transform:rotate(-18deg)}
+.territory-science .c3{width:145px;height:115px;left:360px;top:240px;transform:rotate(21deg)}
+.territory-science .cell::after{content:"";position:absolute;width:22%;aspect-ratio:1;border-radius:50%;left:38%;top:34%;background:rgba(73,135,82,.17);box-shadow:0 0 0 8px rgba(73,135,82,.045)}
+.territory-science .leaf{position:absolute;width:125px;height:55px;border:2px solid rgba(70,132,80,.24);border-left-width:4px;border-radius:100% 0 100% 0;transform-origin:left bottom}
+.territory-science .leaf::after{content:"";position:absolute;left:5px;right:8px;top:50%;height:1px;background:rgba(70,132,80,.26);transform:rotate(-2deg)}
+.territory-science .l1{left:65px;top:55px;transform:rotate(-22deg)}.territory-science .l2{left:410px;top:80px;transform:rotate(29deg) scale(.8)}
+.territory-science .bio-thread{position:absolute;width:270px;height:110px;border:3px solid transparent;border-top-color:rgba(76,144,88,.19);border-radius:50%;transform:rotate(19deg)}
+.territory-science .bt1{left:110px;top:360px}.territory-science .bt2{left:260px;top:335px;transform:rotate(-14deg)}
+.territory-science .scene-note{left:370px;top:375px}
+
+/* Data clinique — page eCRF, impulsion, points de données */
+.territory-clinical{left:430px;top:315px;color:#3e8ed0}
+.ecrf-paper{position:absolute;left:40px;top:78px;width:220px;height:285px;padding:20px 18px;background:#fffdf7;border:1px solid rgba(50,121,166,.18);box-shadow:10px 12px 0 rgba(62,142,208,.08),0 18px 34px rgba(72,93,98,.08);transform:rotate(-4deg);font-size:10px;color:#628096}
+.ecrf-paper::before{content:"FORMULAIRE CLINIQUE";display:block;font-size:8px;letter-spacing:.14em;color:#8aa0ae;margin-bottom:10px}.ecrf-paper b{font-family:"Fraunces",Georgia,serif;font-size:29px;color:#347eb0}.ecrf-paper i{display:block;height:1px;background:#d8e5e8;margin:17px 0;position:relative}.ecrf-paper i::before{content:"□";position:absolute;left:0;top:-10px;color:#7f9ba8}.ecrf-paper span{display:block;margin-top:12px;color:#63806f;font-weight:700}
+.clinical-pulse{position:absolute;left:290px;top:125px;width:270px;height:120px;display:flex;align-items:center;gap:11px}
+.clinical-pulse::before{content:"";position:absolute;left:0;right:0;top:50%;height:2px;background:rgba(62,142,208,.16)}.clinical-pulse i{position:relative;z-index:1;width:18px;height:18px;border-radius:50%;background:#fffdf7;border:3px solid #5b9dcc;box-shadow:0 0 0 6px rgba(62,142,208,.07)}.clinical-pulse i:nth-child(2){transform:translateY(-30px)}.clinical-pulse i:nth-child(3){transform:translateY(19px)}.clinical-pulse i:nth-child(4){transform:translateY(-17px)}
+.data-dots{position:absolute;left:330px;top:270px;width:190px;height:90px}.data-dots i{position:absolute;width:10px;height:10px;border-radius:50%;background:rgba(57,130,176,.38)}.data-dots i:nth-child(1){left:0;top:25px}.data-dots i:nth-child(2){left:35px;top:3px}.data-dots i:nth-child(3){left:68px;top:42px}.data-dots i:nth-child(4){left:102px;top:17px}.data-dots i:nth-child(5){left:142px;top:53px}.data-dots i:nth-child(6){left:178px;top:23px}
+.territory-clinical .scene-note{left:325px;top:365px}
+
+/* Validation — checklist, tampon, règle de contrôle */
+.territory-validation{left:1840px;top:275px;color:#2f6fbb}
+.qa-stamp{position:absolute;left:330px;top:65px;padding:12px 22px;border:5px double rgba(47,111,187,.28);border-radius:8px;font:800 27px/1 "DM Sans",sans-serif;letter-spacing:.13em;color:rgba(47,111,187,.34);transform:rotate(-9deg)}
+.qa-sheet{position:absolute;left:62px;top:100px;width:225px;height:260px;padding:28px 24px;background:#fffdf8;border:1px solid rgba(47,111,187,.16);box-shadow:9px 10px 0 rgba(47,111,187,.07);transform:rotate(3deg)}.qa-sheet::before{content:"PLAN DE VÉRIFICATION";display:block;margin-bottom:20px;color:#5d7291;font-size:9px;letter-spacing:.15em;font-weight:800}.qa-sheet span{display:block;padding:10px 0;border-bottom:1px solid rgba(55,80,115,.10);font:600 11px "DM Sans",sans-serif;color:#647184}.qa-sheet span::first-letter{color:#3272b7}
+.qa-rule{position:absolute;left:325px;top:235px;width:230px;height:36px;border-top:2px solid rgba(47,111,187,.18);background:repeating-linear-gradient(90deg,rgba(47,111,187,.20) 0 1px,transparent 1px 18px)}
+.territory-validation .scene-note{left:330px;top:330px}
+
+/* Développement — blueprint et esquisses */
+.territory-dev{left:1810px;top:1200px;color:#8c63a8}
+.blueprint{position:absolute;border:2px solid rgba(123,86,151,.15);background:linear-gradient(90deg,rgba(123,86,151,.05) 1px,transparent 1px),linear-gradient(rgba(123,86,151,.05) 1px,transparent 1px);background-size:18px 18px}
+.bp1{width:270px;height:190px;left:30px;top:75px;transform:rotate(-3deg)}.bp2{width:180px;height:135px;left:365px;top:245px;transform:rotate(7deg)}
+.blueprint::before,.blueprint::after{content:"";position:absolute;border:2px solid rgba(123,86,151,.16)}.blueprint::before{left:35px;top:34px;width:80px;height:65px}.blueprint::after{right:32px;bottom:24px;width:98px;height:48px;border-radius:50%}
