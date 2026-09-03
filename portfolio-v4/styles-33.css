@@ -1,0 +1,47 @@
+.trace-flow span,.agent-pipeline span,.kanban-board>div,.ecrf-form span,.skill-orbit i,.root-journey span{background:#fffaf0;border-color:rgba(76,67,55,.11);color:#697068}.trace-flow .trace-run{color:#26364b}.trace-flow .trace-pass{color:#3e8a60}.trace-meta b{color:#36465a}.trace-meta small{color:#81776a}
+.ecrf-form i{background:#eaf3f9;color:#377daf}.science-steps{color:#766f66}.science-steps b{color:#c7862d}.dna i::before,.dna i::after{background:rgba(50,56,60,.22)}
+.code-demo pre,.terminal{background:#24344a;border-color:#24344a;box-shadow:4px 5px 0 rgba(230,163,58,.18)}.code-demo code{color:#dfe6e8}.code-demo em{color:#9eafba}.code-demo b{color:#e5b95d}.terminal p{color:#b8c4cb}.terminal p b{color:#f0bd5f}.terminal-line.ok{color:#8ed0a1}
+.kanban-board span{background:#fffdf7;border-color:rgba(70,64,55,.10);color:#5f655f}.kanban-board b{color:#7f7568}.kanban-footer span{background:#f0e7d8;color:#746b60}.health-network>span{background:#fffaf0;border-color:rgba(80,69,55,.12);color:#59655f}.health-network svg path{stroke:rgba(202,143,48,.28)}.health-network .hub{color:#96611f;border-color:rgba(217,135,47,.28)}.health-network small{color:#8b7f70}.prototype-warning{background:#fff4d9;border-color:rgba(218,159,60,.20);color:#805f30}.skill-core{border-color:rgba(217,135,47,.30);color:#7d501b;background:#fff2ce;box-shadow:0 10px 25px rgba(101,75,37,.10)}.timeline-track::before{background:linear-gradient(90deg,#4f9d69,#3e8ed0,#2f6fbb,#e6a33a,#9a7b35)}.timeline-track span::before{box-shadow:0 0 0 4px #f8f0e3}.timeline-track .now::before{background:#d9872f;box-shadow:0 0 0 4px #f8f0e3}.timeline-track .now b{color:#b66d20}.human-values span{background:#fff0ea;border-color:rgba(217,107,95,.18);color:#8a5c56}.root-journey .active{color:#8a551b;border-color:rgba(217,135,47,.24);background:#fff1d0}
+
+.search-box,.recruiter-card{border-color:rgba(69,64,55,.13);background:#fffaf0;color:#26364b;box-shadow:0 30px 70px rgba(78,57,31,.18)}.search-head small,.recruiter-kicker{color:#c47822}.search-head h2,.recruiter-main h2{font-family:"Fraunces",Georgia,serif;color:#223149}.search-box input{background:#fffdf8!important;border-color:rgba(69,64,55,.14)!important;color:#24344a!important}.search-result{background:#fffdf8!important;border-color:rgba(69,64,55,.10)!important;color:#26364b!important}.search-result span{color:#7b746b!important}.search-result:hover{border-color:rgba(47,111,187,.25)!important;background:#f5f8fb!important}.recruiter-main p,.value-points small{color:#6b6d66}.value-points div{background:#fffdf8!important;border-color:rgba(69,64,55,.10)!important}.value-points b{color:#d9872f!important}.availability{background:#f5f8f3!important;border-color:rgba(79,157,105,.18)!important;color:#425349!important}.recruiter-side img{border:9px solid #fff!important;box-shadow:7px 8px 0 rgba(230,163,58,.18),0 18px 35px rgba(80,58,33,.16)!important;transform:rotate(2deg)}
+
+.tour-overlay{border-color:rgba(69,64,55,.13);background:#fffaf0;backdrop-filter:none;box-shadow:0 24px 55px rgba(78,57,31,.19),6px 7px 0 rgba(79,157,105,.10);color:#26364b}.tour-progress{background:#eee4d4}.tour-progress span{background:linear-gradient(90deg,#d9872f,#e6a33a,#4f9d69)}.tour-copy small{color:#ba7627}.tour-copy h3{font-family:"Fraunces",Georgia,serif;color:#223149}.tour-copy p{color:#676a64}
+
+@media (max-width:780px){
+  .intro-card{display:block;text-align:center;padding:24px 18px}.intro-card::before{display:none}.intro-avatar-wrap{width:136px;height:160px;margin:0 auto 17px;transform:rotate(-2deg)}.intro-kicker{text-align:center;margin-bottom:14px}.intro-card h1{font-size:48px}.intro-role,.intro-thesis,.intro-note{text-align:center;margin-left:auto;margin-right:auto}.intro-path,.intro-actions,.intro-microcopy{justify-content:center}.intro-note{text-align:center}.intro-overlay::before{width:420px;height:420px;right:-220px;top:-170px}
+  .node.root{min-width:300px}.atlas-word{font-size:62px}.storyline{display:none}
+}
+@media (max-width:560px){
+  .topbar{padding:0 12px}.brand-copy{display:none}.ghost b{display:none}.primary.compact{padding:0 12px}.intro-card h1{font-size:42px}.intro-thesis{font-size:19px}.intro-path{font-size:9px}.intro-microcopy{gap:10px;flex-wrap:wrap}.node{box-shadow:0 10px 20px rgba(86,67,43,.12)}.detail-panel{background:#fffaf0}
+}
+
+/* ========================================================================== */
+/* V4 — TERRITOIRES ARTISTIQUES : un atlas qui change de langage en entrant */
+/* ========================================================================== */
+.stage{transition:background .9s ease,box-shadow .9s ease}
+body[data-territory="science"] .stage{background:
+  radial-gradient(circle at 24% 70%,rgba(119,178,125,.24),transparent 24%),
+  radial-gradient(circle at 18% 25%,rgba(240,200,105,.18),transparent 20%),
+  linear-gradient(145deg,#f4f1df,#fbf8ec 48%,#eaf2df)}
+body[data-territory="clinical"] .stage{background:
+  linear-gradient(rgba(61,130,175,.045) 1px,transparent 1px),
+  radial-gradient(circle at 24% 33%,rgba(86,166,207,.20),transparent 28%),
+  linear-gradient(145deg,#edf7f6,#fffdf4 52%,#edf2e9);background-size:100% 34px,auto,auto}
+body[data-territory="validation"] .stage{background:
+  linear-gradient(90deg,rgba(52,92,142,.035) 1px,transparent 1px),
+  linear-gradient(rgba(52,92,142,.035) 1px,transparent 1px),
+  radial-gradient(circle at 70% 29%,rgba(57,116,185,.17),transparent 28%),
+  linear-gradient(145deg,#f5f4eb,#fffdf7 50%,#eaf0f8);background-size:38px 38px,38px 38px,auto,auto}
+body[data-territory="dev"] .stage{background:
+  linear-gradient(90deg,rgba(92,75,135,.045) 1px,transparent 1px),
+  linear-gradient(rgba(92,75,135,.045) 1px,transparent 1px),
+  radial-gradient(circle at 72% 72%,rgba(133,99,168,.17),transparent 29%),
+  linear-gradient(145deg,#f5f0e9,#fffaf2 48%,#eee8f5);background-size:26px 26px,26px 26px,auto,auto}
+body[data-territory="ai"] .stage{background:
+  radial-gradient(circle at 82% 48%,rgba(244,185,76,.26),transparent 25%),
+  radial-gradient(circle at 66% 68%,rgba(224,111,80,.12),transparent 22%),
+  linear-gradient(145deg,#fff4dc,#fffaf0 52%,#f6ecdf)}
+body[data-territory="human"] .stage{background:
+  radial-gradient(circle at 46% 84%,rgba(222,106,92,.17),transparent 25%),
+  radial-gradient(circle at 32% 70%,rgba(245,183,94,.18),transparent 22%),
+  linear-gradient(145deg,#fff1e8,#fffaf0 50%,#f4e9df)}
